@@ -25,7 +25,7 @@ app.get('/homeport',function(req,res){
 
 
 app.get('/port',function(req,res){
-	mock.saveIp(req.query.ip,req.query.port)
+	mock.saveIp(req.query.ip,req.query.port,req.query.path)
 	res.end();
 	// res.sendFile(path.resolve(__dirname,'../dist/index.html'))
 })
